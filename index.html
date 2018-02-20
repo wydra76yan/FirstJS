@@ -2,11 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page blo!</title>
+    <title>Most beautiful пaгe in зе world</title>
+    <style type="text/css">
+     #container {
+         height: 450px;
+         width: 650px;
+         margin: 20px auto;
+         position: relative;
+     }
+     .img{
+         height: 450px;
+         width: 650px;
+         position: absolute;
+     }
+     #left_holder{
+         height: 450px;
+         width: 100px;
+         position: absolute;
+         left: 0px;
+         top: 0px;
+     }
+     #right_holder{
+         height: 450px;
+         width: 100px;
+         position: absolute;
+         right: 0px;
+         top: 0px;
+     }
+     .left{
+         height: 50px;
+         width: 50px;
+         position: absolute;
+         top:40%;
+         left: 0px;
+     }
+     .right{
+         height: 50px;
+         width: 50px;
+         position: absolute;
+         top:40%;
+         right: 0px;
+     }
+    </style>
+    <script type="text/javascript">
+        var imagecount=1;
+        var total=3;
+
+        function slide(x) {
+            var Image = document.getElementsByClassName('img');
+            Image.src = ""
+            
+        }
+
+    </script>
 </head>
 <body>
-  <script src="ForAlert.js"></script>
-  <button id='elem1' type="button" onclick="handl1()"> Click me for green! </button>
-  <button id='elem2' type="button" onclick="handl2()"> Click me for blue! </button>
+  <div id="container">
+      <img src="images/FirstSliderImage.jpg" class="img"/>
+      <div id="left_holder"></div>
+      <div id="right_holder"></div>
+  </div>
 </body>
 </html>
