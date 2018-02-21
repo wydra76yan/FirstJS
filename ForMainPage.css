@@ -1,12 +1,15 @@
-#slider {
-    opacity:1;
-    transition: opacity 1s;
+#slide.fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 500ms;
 }
 
-#slider.fadeOut {
-    opacity:0;
+#slide.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 500ms;
 }
 body {
-    background-color: orange;
+    background-color: white;
 }
 
